@@ -1,0 +1,22 @@
+name: Greeting on variable day
+
+on:
+  workflow_dispatch
+
+env:
+  DAY_OF_WEEK: Monday
+  FIRST_NAME: Andreas
+  END_OF_WEEK: Friday
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: "Say Hello ANdreas it's Monday hope you make it till Friday"
+        run: echo "$Greeting $FIRST_NAME. Today is $DAY_OF_WEEK! hope you make it until $END_OF_WEEK"
+      - name: "Tell last day of the week"
+        run: echo "The last day before the weekend is $END_OF_WEEK
+      - name: "Tell Andreas he is handsome"
+        run: echo "Oh $FIRST_NAME you are beautiful today!"
