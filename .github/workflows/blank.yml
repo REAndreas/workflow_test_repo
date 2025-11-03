@@ -17,6 +17,6 @@ jobs:
       - name: "Say Hello ANdreas it's Monday hope you make it till Friday"
         run: echo "$Greeting $FIRST_NAME. Today is $DAY_OF_WEEK! hope you make it until $END_OF_WEEK"
       - name: "Tell last day of the week"
-        run: echo "The last day before the weekend is $END_OF_WEEK
+        run: echo "The last day before the weekend is $END_OF_WEEK"
       - name: "Tell Andreas he is handsome"
         run: echo "Oh $FIRST_NAME you are beautiful today!"
